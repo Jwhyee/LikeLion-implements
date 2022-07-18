@@ -1,15 +1,15 @@
 package implementation.arraylist;
 
-public class ArrayList {
-    private int[] datum;
+public class ArrayList<T> {
+    private Object[] datum;
     private int size;
 
     ArrayList() {
-        datum = new int[2];
+        datum = new Object[2];
         size = 0;
     }
 
-    public void add(int data) {
+    public void add(Object data) {
         sizeUpIfFull();
         datum[size] = data;
         size++;
@@ -22,7 +22,7 @@ public class ArrayList {
     }
 
     private void sizeUp() {
-        int[] newDatum = new int[datum.length * 2];
+        Object[] newDatum = new Object[datum.length * 2];
 
         for ( int i = 0; i < datum.length; i++ ) {
             newDatum[i] = datum[i];
@@ -35,8 +35,8 @@ public class ArrayList {
         return size == datum.length;
     }
 
-    public int get(int idx) {
-        return datum[idx];
+    public T get(int idx) {
+        return (T)datum[idx];
     }
 
     public void removeAt(int idx) {

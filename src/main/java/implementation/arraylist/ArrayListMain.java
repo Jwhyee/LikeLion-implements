@@ -2,7 +2,7 @@ package implementation.arraylist;
 
 public class ArrayListMain {
     public static void main(String[] args) {
-        ArrayList al = new ArrayList();
+        ArrayList<Integer> al = new ArrayList<>();
 
         System.out.println("al.size() : " + al.size());
         // 출력 => al.size() : 0

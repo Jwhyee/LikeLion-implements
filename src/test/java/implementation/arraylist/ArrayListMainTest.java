@@ -16,7 +16,7 @@ class ArrayListMainTest {
 
     @Test
     void get_1_equals_200() {
-        ArrayList al = new ArrayList();
+        ArrayList<Integer> al = new ArrayList<>();
         al.add(100);
         al.add(200);
         al.add(300);
@@ -27,7 +27,7 @@ class ArrayListMainTest {
 
     @Test
     void removeAt() {
-        ArrayList al = new ArrayList();
+        ArrayList<Integer> al = new ArrayList<>();
         al.add(100);
         al.add(200);
         al.add(300);
@@ -37,7 +37,7 @@ class ArrayListMainTest {
 
     @Test
     void removeAt을_실행하면_size가_1_줄어든다() {
-        ArrayList al = new ArrayList();
+        ArrayList<Integer> al = new ArrayList<>();
         al.add(100);
         al.add(200);
         al.add(300);
@@ -51,7 +51,7 @@ class ArrayListMainTest {
 
     @Test
     void removeAt을_실행하면_뒷좌석에_있는_데이터들이_전부_한칸씩_앞으로_이동() {
-        ArrayList al = new ArrayList();
+        ArrayList<Integer> al = new ArrayList<>();
         al.add(100);
         al.add(200);
         al.add(300);
@@ -65,14 +65,14 @@ class ArrayListMainTest {
 
     @Test
     void 최초에_배열의_크기는_2_이다() {
-        ArrayList al = new ArrayList();
+        ArrayList<Integer> al = new ArrayList<>();
 
         assertEquals(2, al.getArrayLength());
     }
 
     @Test
     void 배열이_꽉_차면_2배_크기로_증가해야_한다() {
-        ArrayList al = new ArrayList();
+        ArrayList<Integer> al = new ArrayList<>();
         al.add(100);
         al.add(200);
         assertEquals(2, al.getArrayLength());
@@ -82,7 +82,7 @@ class ArrayListMainTest {
 
     @Test
     void showAllValues() {
-        ArrayList al = new ArrayList();
+        ArrayList<Integer> al = new ArrayList<>();
         al.add(1000);
         al.add(200);
         al.add(30);

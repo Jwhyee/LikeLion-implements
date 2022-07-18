@@ -3,12 +3,12 @@ package com.ll.exam;
 import java.util.ArrayList;
 import java.util.List;
 
-public class HashMapC<K, V> {
+public class HashMap<K, V> {
     private Object[] keys;
     private Object[] values;
     private int size;
 
-    HashMapC() {
+    HashMap() {
         keys = new Object[2];
         values = new Object[2];
         size = 0;

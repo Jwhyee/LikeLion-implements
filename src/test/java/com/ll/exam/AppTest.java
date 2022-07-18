@@ -9,23 +9,23 @@ import static org.junit.jupiter.api.Assertions.*;
 class AppTest {
     @Test
     void 클래스가_존재한다() {
-        HashMapC map = new HashMapC();
+        HashMap map = new HashMap();
     }
 
     @Test
     void 제너릭이_가능하다() {
-        HashMapC<String, Integer> map = new HashMapC<>();
+        HashMap<String, Integer> map = new HashMap<>();
     }
 
     @Test
     void put() {
-        HashMapC<String, Integer> ages = new HashMapC<>();
+        HashMap<String, Integer> ages = new HashMap<>();
         ages.put("철수", 22);
     }
 
     @Test
     void get() {
-        HashMapC<String, Integer> ages = new HashMapC<>();
+        HashMap<String, Integer> ages = new HashMap<>();
         ages.put("철수", 22);
         int age = ages.get("철수");
 
@@ -34,7 +34,7 @@ class AppTest {
 
     @Test
     void _2nd_get() {
-        HashMapC<String, Integer> ages = new HashMapC<>();
+        HashMap<String, Integer> ages = new HashMap<>();
         ages.put("철수", 22);
         ages.put("영희", 25);
         assertEquals(22, ages.get("철수"));
@@ -43,7 +43,7 @@ class AppTest {
 
     @Test
     void put__데이터_수정() {
-        HashMapC<String, Integer> ages = new HashMapC<>();
+        HashMap<String, Integer> ages = new HashMap<>();
         ages.put("철수", 22);
         ages.put("영희", 25);
         ages.put("영희", 27);
@@ -53,7 +53,7 @@ class AppTest {
 
     @Test
     void remove() {
-        HashMapC<String, Integer> ages = new HashMapC<>();
+        HashMap<String, Integer> ages = new HashMap<>();
         ages.put("철수", 22);
         assertEquals(1, ages.size());
 
@@ -70,7 +70,7 @@ class AppTest {
 
     @Test
     void keySet() {
-        HashMapC<String, Integer> ages = new HashMapC<>();
+        HashMap<String, Integer> ages = new HashMap<>();
         ages.put("철수", 22);
         ages.put("영희", 25);
 
@@ -81,7 +81,7 @@ class AppTest {
 
     @Test
     void 원숭이_맵() {
-        HashMapC<String, 원숭이> monkeys = new HashMapC<>();
+        HashMap<String, 원숭이> monkeys = new HashMap<>();
 
         원숭이 a원숭이_키키 = new 원숭이("키키");
         원숭이 a원숭이_코코 = new 원숭이("코코");
@@ -95,7 +95,7 @@ class AppTest {
 
     @Test
     void 다양한_종류의_객체들의_맵() {
-        HashMapC<String, Object> monkeys = new HashMapC<>();
+        HashMap<String, Object> monkeys = new HashMap<>();
 
         monkeys.put("원숭이_키키", new 원숭이("키키"));
         monkeys.put("사람_존", new 사람("존"));
